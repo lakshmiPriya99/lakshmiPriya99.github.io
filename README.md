@@ -6,7 +6,7 @@ GitHub Pages-ready portfolio website for `lakshmiPriya99.github.io`.
 
 - `index.html` contains the page content.
 - `styles.css` contains the visual design and responsive layout.
-- `script.js` handles the mobile menu, section reveals, and footer year.
+- `script.js` handles the mobile menu, section reveals, footer year, and particle background.
 
 ## Update Before Publishing
 
