@@ -1,6 +1,6 @@
 # Lakshmi Priya Portfolio
 
-GitHub Pages-ready portfolio website for `lakshmiPriya99.github.io`.
+GitHub Pages-ready portfolio website for `lakshmipriyav.github.io`.
 
 ## Files
 
@@ -18,11 +18,11 @@ GitHub Pages-ready portfolio website for `lakshmiPriya99.github.io`.
 
 ## Publish To GitHub Pages
 
-1. Create a public GitHub repository named exactly `lakshmiPriya99.github.io`.
+1. Create a public GitHub repository named exactly `lakshmipriyav.github.io`.
 2. Upload the contents of this folder to the root of that repository.
 3. Push to the `main` branch.
 4. In GitHub, open `Settings` > `Pages` and confirm the site is publishing from the `main` branch.
-5. Wait a minute or two, then open `https://lakshmiPriya99.github.io`.
+5. Wait a minute or two, then open `https://lakshmipriyav.github.io`.
 
 ## Quick Customize Ideas
 
