@@ -8,49 +8,28 @@
       name="description"
       content="Lakshmi Priya is a Cloud, AI, and Full Stack Engineer with enterprise experience across Azure, AWS, backend systems, data pipelines, and internal product platforms."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
+    <meta property="og:title" content="Lakshmi Priya | Cloud & Full-Stack Engineer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Lakshmi Priya, specializing in cloud infrastructure automation, backend APIs, and data workflows."
     />
-    <script>
-      window.tailwind = window.tailwind || {};
-      window.tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              bg: "#0B1120",
-              surface: "#111827",
-              primary: "#3B82F6",
-              cyan: "#06B6D4",
-              text: "#F8FAFC",
-              muted: "#94A3B8",
-              border: "#1F2937",
-            },
-            fontFamily: {
-              heading: ["Sora", "sans-serif"],
-              body: ["Inter", "sans-serif"],
-            },
-            borderRadius: {
-              "2xl": "1rem",
-            },
-          },
-        },
-      };
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="og:image" content="https://lakshmiPriya99.github.io/preview.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lakshmiPriya99.github.io" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-bg text-text font-body antialiased">
+  <body>
     <div class="site-backdrop" aria-hidden="true"></div>
     <canvas class="particle-canvas" id="particle-canvas" aria-hidden="true"></canvas>
 
-    <div class="site-shell mx-auto min-h-screen w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="site-shell">
       <header class="site-header">
         <a class="brand" href="#top" aria-label="Go to top">
           <span class="brand-mark">LP</span>
-          <span class="brand-text">Lakshmi Priya</span>
+          <span class="brand-copy">
+            <span>Lakshmi Priya</span>
+            <span>Cloud AI Full Stack</span>
+          </span>
         </a>
 
         <button
@@ -64,128 +43,120 @@
 
         <nav class="site-nav" id="site-nav" aria-label="Primary">
           <a href="#about">About</a>
-          <a href="#timeline">Experience</a>
+          <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
-          <a href="#certifications">Certifications</a>
-          <a class="nav-cta" href="#contact">Contact</a>
+          <a href="#contact">Contact</a>
         </nav>
       </header>
 
       <main id="top">
         <section class="hero-section">
-          <div class="hero-gradient" aria-hidden="true"></div>
-
           <div class="hero-copy reveal">
-            <p class="eyebrow">Cloud / AI / Full Stack Engineer</p>
-            <h1>Lakshmi Priya</h1>
+            <p class="kicker">Enterprise Software Engineering Portfolio</p>
+            <h1>Cloud, AI, and full-stack systems engineer.</h1>
             <p class="hero-lede">
-              I build enterprise-grade cloud platforms, backend services, data
-              workflows, and AI-enabled internal products that make complex
-              systems more reliable and usable.
+              I design and build reliable cloud platforms, tested backend
+              services, data pipelines, and AI-enabled workflows for enterprise
+              teams that need secure systems, clean interfaces, and measurable
+              operational impact.
             </p>
 
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#projects">View Projects</a>
-            </div>
-
-            <div class="hero-metrics">
-              <article>
-                <span>4+ yrs</span>
-                <p>Enterprise engineering</p>
-              </article>
-              <article>
-                <span>10M+</span>
-                <p>Daily records processed</p>
-              </article>
-              <article>
-                <span>85%</span>
-                <p>Backend and UI test coverage</p>
-              </article>
+            <div class="btn-container">
+              <a class="btn btn-primary" href="#projects">View Case Studies</a>
+              <a class="btn btn-secondary" href="Lakshmi_Priya_Resume.pdf" download>
+                Download Resume
+              </a>
             </div>
           </div>
 
-          <aside class="hero-dashboard reveal delay-1" aria-label="Engineer profile">
-            <div class="dashboard-topline">
-              <span class="status-dot"></span>
-              <p>Available for cloud, AI, backend, and platform roles</p>
+          <aside class="system-panel reveal delay-1" aria-label="Engineer profile">
+            <div class="panel-header">
+              <span class="status-light"></span>
+              <span>Profile console</span>
             </div>
 
-            <div class="dashboard-card">
-              <p class="panel-label">Current focus</p>
-              <h2>Cloud automation, AI workflows, and full stack systems.</h2>
-              <p>
-                Recent work spans Azure governance, PostgreSQL access
-                automation, Django APIs, Next.js product workflows, telemetry
-                pipelines, and analytics systems.
-              </p>
+            <div class="profile-record">
+              <span>Name</span>
+              <strong>Lakshmi Priya</strong>
+            </div>
+            <div class="profile-record">
+              <span>Focus</span>
+              <strong>Cloud Automation / AI Systems / Full Stack</strong>
+            </div>
+            <div class="profile-record">
+              <span>Stack</span>
+              <strong>Python, Django, React, Azure, AWS, PostgreSQL</strong>
+            </div>
+            <div class="profile-record">
+              <span>Status</span>
+              <strong>Open to software engineering roles</strong>
             </div>
 
-            <div class="dashboard-grid">
-              <div>
-                <span>Azure + AWS</span>
-                <p>Cloud platforms</p>
-              </div>
-              <div>
-                <span>Python + Django</span>
-                <p>Backend APIs</p>
-              </div>
-              <div>
-                <span>React + Next.js</span>
-                <p>Product UI</p>
-              </div>
-              <div>
-                <span>Kafka + Redis</span>
-                <p>Distributed systems</p>
-              </div>
+            <div class="metrics-container">
+              <article class="metric-card">
+                <span class="metric-number">4+ yrs</span>
+                <p class="metric-label">Enterprise engineering</p>
+              </article>
+              <article class="metric-card">
+                <span class="metric-number">10M+</span>
+                <p class="metric-label">Daily records processed</p>
+              </article>
+              <article class="metric-card">
+                <span class="metric-number">85%</span>
+                <p class="metric-label">Test coverage delivered</p>
+              </article>
             </div>
           </aside>
         </section>
 
-        <section class="section-shell" id="about">
+        <section class="section-block" id="about">
           <div class="section-heading reveal">
-            <p class="eyebrow">About Me</p>
-            <h2>I connect infrastructure, data, and product engineering.</h2>
+            <p class="section-label">About</p>
+            <h2>Engineering profile</h2>
             <p>
-              My background combines enterprise platform engineering at Cisco
-              with recent U.S. internships in cloud engineering and internal
-              product development. I enjoy building systems that are reliable
-              under the hood and clear for the people who depend on them.
+              A systems-minded engineer with enterprise experience at Cisco and
+              recent U.S. internships in cloud engineering and internal product
+              development. I work across infrastructure, backend services, data
+              workflows, and product UI with a bias for reliability and clarity.
             </p>
           </div>
 
-          <div class="about-grid">
-            <article class="glass-card reveal">
+          <div class="card-grid three-columns">
+            <article class="content-card reveal">
+              <span class="card-index">01</span>
               <h3>Cloud Engineering</h3>
               <p>
-                Azure identity, Terraform automation, CI/CD workflows,
-                governance, and cost-aware analytics infrastructure.
+                Azure identity, Terraform automation, CI/CD, cloud governance,
+                PostgreSQL access control, and cost-aware analytics platforms.
               </p>
             </article>
-            <article class="glass-card reveal delay-1">
-              <h3>AI + Backend Systems</h3>
+            <article class="content-card reveal delay-1">
+              <span class="card-index">02</span>
+              <h3>AI and Backend Systems</h3>
               <p>
-                Django REST APIs, RAG systems, Celery workflows, PostgreSQL,
-                Redis, and OpenAI API integrations for practical automation.
+                Django REST APIs, RAG workflows, Celery, Redis, PostgreSQL,
+                OpenAI API integrations, and GenAI support automation.
               </p>
             </article>
-            <article class="glass-card reveal delay-2">
+            <article class="content-card reveal delay-2">
+              <span class="card-index">03</span>
               <h3>Full Stack Delivery</h3>
               <p>
                 React and Next.js interfaces backed by tested APIs, database
-                workflows, and enterprise release practices.
+                workflows, deployment pipelines, and production quality gates.
               </p>
             </article>
           </div>
         </section>
 
-        <section class="section-shell" id="timeline">
+        <section class="section-block" id="experience">
           <div class="section-heading reveal">
-            <p class="eyebrow">Experience Timeline</p>
-            <h2>Most recent work first.</h2>
+            <p class="section-label">Experience</p>
+            <h2>Timeline</h2>
             <p>
-              Enterprise and internship experience across cloud engineering,
-              product development, distributed systems, and platform delivery.
+              Most recent work first, spanning cloud governance, full-stack
+              product delivery, distributed telemetry, and platform automation.
             </p>
           </div>
 
@@ -193,15 +164,16 @@
             <article class="timeline-item reveal">
               <div class="timeline-marker"></div>
               <div class="timeline-card">
-                <p class="timeline-date">Sept 2025 - May 2026</p>
+                <div class="timeline-topline">
+                  <span class="date-badge">Sept 2025 - May 2026</span>
+                  <span>Internship</span>
+                </div>
                 <h3>Cloud Engineering Intern</h3>
-                <p class="timeline-company">
-                  Toshiba Global Commerce Solutions - Dallas, TX
-                </p>
+                <p class="company-line">Toshiba Global Commerce Solutions - Dallas, TX</p>
                 <p>
                   Automated Azure identity workflows, PostgreSQL access,
-                  Microsoft Fabric reporting, and cloud cost optimization for
-                  retail analytics systems.
+                  Microsoft Fabric reporting, and cost optimization for retail
+                  analytics systems.
                 </p>
               </div>
             </article>
@@ -209,9 +181,12 @@
             <article class="timeline-item reveal delay-1">
               <div class="timeline-marker"></div>
               <div class="timeline-card">
-                <p class="timeline-date">May 2025 - Aug 2025</p>
+                <div class="timeline-topline">
+                  <span class="date-badge">May 2025 - Aug 2025</span>
+                  <span>Internship</span>
+                </div>
                 <h3>Software Developer Intern</h3>
-                <p class="timeline-company">Paycom - Dallas, TX</p>
+                <p class="company-line">Paycom - Dallas, TX</p>
                 <p>
                   Built Django APIs and Next.js workflows for QR attendance,
                   added Pytest and Jest coverage, and developed an internal
@@ -223,11 +198,12 @@
             <article class="timeline-item reveal delay-2">
               <div class="timeline-marker"></div>
               <div class="timeline-card">
-                <p class="timeline-date">Aug 2024 - May 2026</p>
+                <div class="timeline-topline">
+                  <span class="date-badge">Aug 2024 - May 2026</span>
+                  <span>Graduate</span>
+                </div>
                 <h3>M.S. in Computer Science</h3>
-                <p class="timeline-company">
-                  The University of Texas at Arlington
-                </p>
+                <p class="company-line">The University of Texas at Arlington</p>
                 <p>
                   Graduate study focused on software engineering, systems,
                   cloud, and applied computer science foundations.
@@ -238,9 +214,12 @@
             <article class="timeline-item reveal">
               <div class="timeline-marker"></div>
               <div class="timeline-card">
-                <p class="timeline-date">Aug 2020 - Jul 2024</p>
+                <div class="timeline-topline">
+                  <span class="date-badge">Aug 2020 - Jul 2024</span>
+                  <span>Full-time</span>
+                </div>
                 <h3>Software Engineer</h3>
-                <p class="timeline-company">Cisco Systems - Bengaluru, India</p>
+                <p class="company-line">Cisco Systems - Bengaluru, India</p>
                 <p>
                   Delivered Docker automation, AWS migration work, telemetry
                   pipelines, ML-driven alerting, React dashboards, and
@@ -252,132 +231,161 @@
             <article class="timeline-item reveal delay-1">
               <div class="timeline-marker"></div>
               <div class="timeline-card">
-                <p class="timeline-date">Jan 2020 - Jun 2020</p>
+                <div class="timeline-topline">
+                  <span class="date-badge">Jan 2020 - Jun 2020</span>
+                  <span>Internship</span>
+                </div>
                 <h3>Software Engineer Intern</h3>
-                <p class="timeline-company">Cisco Systems - Bengaluru, India</p>
+                <p class="company-line">Cisco Systems - Bengaluru, India</p>
                 <p>
-                  Built early enterprise engineering experience that led into
-                  full-time platform work across systems, automation, and
-                  delivery workflows.
+                  Built foundational enterprise engineering experience across
+                  systems, automation, and software delivery practices.
                 </p>
               </div>
             </article>
           </div>
         </section>
 
-        <section class="section-shell" id="projects">
+        <section class="section-block" id="projects">
           <div class="section-heading reveal">
-            <p class="eyebrow">Projects Grid</p>
-            <h2>Production-minded project work.</h2>
+            <p class="section-label">Projects</p>
+            <h2>Selected systems</h2>
             <p>
-              Selected systems that reflect cloud, AI, backend, data, and
-              product engineering strengths.
+              Production-minded work that demonstrates cloud, AI, data, and
+              full-stack engineering depth.
             </p>
           </div>
 
           <div class="projects-grid">
             <article class="project-card reveal">
-              <p class="project-type">AI + Backend Systems</p>
+              <div class="project-topline">
+                <span>AI Backend</span>
+                <span class="date-badge">01</span>
+              </div>
               <h3>Agentic Supply Chain Demand Forecasting</h3>
               <p>
                 Django REST API-based agentic AI system using RAG, Celery,
                 PostgreSQL, Redis, Docker, and OpenAI API workflows.
               </p>
-              <div class="tag-row">
-                <span>Python</span>
-                <span>Django</span>
-                <span>LangChain</span>
-                <span>Docker</span>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">LangChain</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/lakshmiPriya99?tab=repositories" target="_blank" rel="noreferrer">
+                  Source Code
+                </a>
+                <a href="#contact">Request Demo</a>
               </div>
             </article>
 
             <article class="project-card reveal delay-1">
-              <p class="project-type">Data Engineering</p>
-              <h3>Distributed Telemetry & Inventory Pipeline</h3>
+              <div class="project-topline">
+                <span>Data Platform</span>
+                <span class="date-badge">02</span>
+              </div>
+              <h3>Distributed Telemetry and Inventory Pipeline</h3>
               <p>
                 High-throughput PySpark and Airflow pipeline for more than 10M
                 daily multi-regional supply chain records.
               </p>
-              <div class="tag-row">
-                <span>PySpark</span>
-                <span>Airflow</span>
-                <span>EKS</span>
-                <span>AWS</span>
+              <div class="tech-stack">
+                <span class="tech-tag">PySpark</span>
+                <span class="tech-tag">Airflow</span>
+                <span class="tech-tag">EKS</span>
+                <span class="tech-tag">AWS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/lakshmiPriya99?tab=repositories" target="_blank" rel="noreferrer">
+                  Source Code
+                </a>
+                <a href="#contact">Architecture Notes</a>
               </div>
             </article>
 
             <article class="project-card reveal delay-2">
-              <p class="project-type">Full Stack Product</p>
+              <div class="project-topline">
+                <span>Full Stack</span>
+                <span class="date-badge">03</span>
+              </div>
               <h3>QR Attendance Workflow</h3>
               <p>
                 Django, Next.js, and MS SQL feature for learning attendance
                 automation with API and UI test coverage.
               </p>
-              <div class="tag-row">
-                <span>Django</span>
-                <span>Next.js</span>
-                <span>MS SQL</span>
-                <span>Jest</span>
+              <div class="tech-stack">
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">MS SQL</span>
+                <span class="tech-tag">Jest</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/lakshmiPriya99?tab=repositories" target="_blank" rel="noreferrer">
+                  Source Code
+                </a>
+                <a href="#contact">Product Demo</a>
               </div>
             </article>
           </div>
         </section>
 
-        <section class="section-shell" id="skills">
+        <section class="section-block" id="skills">
           <div class="section-heading reveal">
-            <p class="eyebrow">Skills / Tech Stack</p>
-            <h2>Tools for cloud, AI, data, and full stack delivery.</h2>
+            <p class="section-label">Capabilities</p>
+            <h2>Technical stack</h2>
           </div>
 
-          <div class="skills-grid">
-            <article class="glass-card reveal">
-              <h3>Languages & Frameworks</h3>
-              <div class="tag-row">
-                <span>Python</span>
-                <span>Django</span>
-                <span>React.js</span>
-                <span>Next.js</span>
-                <span>JavaScript</span>
-                <span>TypeScript</span>
-                <span>HTML</span>
-                <span>CSS3</span>
+          <div class="skills-matrix">
+            <article class="skill-card reveal">
+              <h3>Languages and Frameworks</h3>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS3</span>
               </div>
             </article>
 
-            <article class="glass-card reveal delay-1">
-              <h3>Cloud & Platform</h3>
-              <div class="tag-row">
-                <span>Azure</span>
-                <span>AWS</span>
-                <span>Terraform</span>
-                <span>Docker</span>
-                <span>Kubernetes</span>
-                <span>GitHub</span>
-                <span>Jenkins</span>
-                <span>GitLab</span>
+            <article class="skill-card reveal delay-1">
+              <h3>Cloud and Platform</h3>
+              <div class="tech-stack">
+                <span class="tech-tag">Azure</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">Terraform</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">GitHub</span>
+                <span class="tech-tag">Jenkins</span>
+                <span class="tech-tag">GitLab</span>
               </div>
             </article>
 
-            <article class="glass-card reveal delay-2">
-              <h3>Data, AI & Systems</h3>
-              <div class="tag-row">
-                <span>PostgreSQL</span>
-                <span>Kafka</span>
-                <span>RabbitMQ</span>
-                <span>Redis</span>
-                <span>PySpark</span>
-                <span>Pandas</span>
-                <span>OpenAI API</span>
-                <span>LangChain</span>
+            <article class="skill-card reveal delay-2">
+              <h3>Data, AI, and Systems</h3>
+              <div class="tech-stack">
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Kafka</span>
+                <span class="tech-tag">RabbitMQ</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">PySpark</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">OpenAI API</span>
+                <span class="tech-tag">LangChain</span>
               </div>
             </article>
           </div>
         </section>
 
-        <section class="section-shell" id="certifications">
+        <section class="section-block" id="certifications">
           <div class="section-heading reveal">
-            <p class="eyebrow">Certifications</p>
-            <h2>Cloud, networking, agile, and frontend credentials.</h2>
+            <p class="section-label">Credentials</p>
+            <h2>Certifications</h2>
           </div>
 
           <div class="cert-grid">
@@ -408,19 +416,19 @@
           </div>
         </section>
 
-        <section class="section-shell contact-section" id="contact">
+        <section class="section-block contact-section" id="contact">
           <div class="contact-panel reveal">
             <div>
-              <p class="eyebrow">Contact</p>
-              <h2>Let us build something reliable, scalable, and useful.</h2>
+              <p class="section-label">Contact</p>
+              <h2>Let's connect to build something reliable.</h2>
               <p>
                 Open to software engineering roles across cloud, backend,
-                platform, full stack, and AI product teams.
+                platform, full-stack, and AI product teams.
               </p>
             </div>
 
             <div class="contact-actions">
-              <a class="btn btn-primary" href="mailto:your.email@example.com">
+              <a class="btn btn-primary" href="mailto:lpriya99@mavs.uta.edu">
                 Email
               </a>
               <a
@@ -431,7 +439,12 @@
               >
                 GitHub
               </a>
-              <a class="btn btn-secondary" href="#" target="_blank" rel="noreferrer">
+              <a
+                class="btn btn-secondary"
+                href="https://www.linkedin.com/in/lakshmipriya99"
+                target="_blank"
+                rel="noreferrer"
+              >
                 LinkedIn
               </a>
             </div>

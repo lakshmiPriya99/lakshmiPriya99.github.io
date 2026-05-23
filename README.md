@@ -14,7 +14,7 @@ GitHub Pages-ready portfolio website for `lakshmiPriya99.github.io`.
    - LinkedIn
    - Email
 2. Update any wording you want to personalize further.
-3. If you want your resume downloadable later, remove it from `.gitignore`, add the PDF, and add a resume button.
+3. Replace the resume PDF if you want to publish a newer version.
 
 ## Publish To GitHub Pages
 
