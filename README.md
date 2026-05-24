@@ -1,4 +1,4 @@
-# Lakshmi Priya Portfolio
+# Lakshmi Priya Velupula Portfolio
 
 GitHub Pages-ready portfolio website for `lakshmiPriya99.github.io`.
 

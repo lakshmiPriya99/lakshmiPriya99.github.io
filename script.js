@@ -32,8 +32,8 @@ if ("IntersectionObserver" in window) {
       });
     },
     {
-      threshold: 0.18,
-      rootMargin: "0px 0px -40px 0px",
+      threshold: 0.14,
+      rootMargin: "0px 0px -50px 0px",
     }
   );
 
@@ -56,17 +56,17 @@ if (particleCanvas) {
 
   const createParticles = () => {
     const particleCount = Math.min(
-      86,
-      Math.max(34, Math.floor(window.innerWidth / 22))
+      54,
+      Math.max(22, Math.floor(window.innerWidth / 34))
     );
 
     particles = Array.from({ length: particleCount }, () => ({
       x: Math.random() * canvasWidth,
       y: Math.random() * canvasHeight,
-      radius: Math.random() * 1.3 + 0.45,
-      vx: (Math.random() - 0.5) * 0.18,
-      vy: (Math.random() - 0.5) * 0.18,
-      alpha: Math.random() * 0.44 + 0.24,
+      radius: Math.random() * 1.6 + 0.5,
+      vx: (Math.random() - 0.5) * 0.12,
+      vy: (Math.random() - 0.5) * 0.12,
+      alpha: Math.random() * 0.24 + 0.1,
     }));
   };
 
@@ -101,7 +101,7 @@ if (particleCanvas) {
 
       context.beginPath();
       context.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
-      context.fillStyle = `rgba(148, 163, 184, ${particle.alpha})`;
+      context.fillStyle = `rgba(245, 158, 11, ${particle.alpha})`;
       context.fill();
 
       for (let nextIndex = index + 1; nextIndex < particles.length; nextIndex += 1) {
@@ -110,11 +110,11 @@ if (particleCanvas) {
         const distanceY = particle.y - nextParticle.y;
         const distance = Math.hypot(distanceX, distanceY);
 
-        if (distance < 125) {
+        if (distance < 145) {
           context.beginPath();
           context.moveTo(particle.x, particle.y);
           context.lineTo(nextParticle.x, nextParticle.y);
-          context.strokeStyle = `rgba(59, 130, 246, ${0.08 * (1 - distance / 125)})`;
+          context.strokeStyle = `rgba(180, 83, 9, ${0.08 * (1 - distance / 145)})`;
           context.lineWidth = 1;
           context.stroke();
         }
