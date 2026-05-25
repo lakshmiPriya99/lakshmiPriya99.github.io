@@ -503,7 +503,7 @@ main {
   animation-play-state: paused;
 }
 
-.marquee-content span {
+.marquee-content > span {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -522,8 +522,16 @@ main {
   white-space: nowrap;
 }
 
-.marquee-content span::before {
+.marquee-content > span::before {
   display: none;
+}
+
+.preserve-case {
+  text-transform: none;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
 
 .availability-badge {
