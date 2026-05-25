@@ -9,6 +9,8 @@ const particleCanvas = document.getElementById("particle-canvas");
 const cursorDot = document.querySelector(".cursor-dot");
 const cursorOutline = document.querySelector(".cursor-outline");
 const typingTitle = document.querySelector(".typing-title");
+const emailLinks = document.querySelectorAll("[data-email-link]");
+const emailToast = document.getElementById("emailToast");
 let requestTimelineUpdate = () => {};
 let requestActiveNavUpdate = () => {};
 
@@ -20,6 +22,56 @@ const createLucideIcons = () => {
 
 createLucideIcons();
 window.addEventListener("load", createLucideIcons);
+
+const showEmailFallback = (email, gmailUrl) => {
+  if (!emailToast) {
+    return;
+  }
+
+  emailToast.textContent = "";
+
+  const message = document.createElement("span");
+  message.textContent = `If your mail app did not open, email copied: ${email}. `;
+
+  const gmailLink = document.createElement("a");
+  gmailLink.href = gmailUrl;
+  gmailLink.target = "_blank";
+  gmailLink.rel = "noreferrer";
+  gmailLink.textContent = "Open Gmail";
+
+  emailToast.append(message, gmailLink);
+  emailToast.classList.add("is-visible");
+
+  window.clearTimeout(showEmailFallback.hideTimer);
+  showEmailFallback.hideTimer = window.setTimeout(() => {
+    emailToast.classList.remove("is-visible");
+  }, 7000);
+};
+
+if (emailLinks.length) {
+  emailLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      const email = link.dataset.email || "lxv6063@mavs.uta.edu";
+      const subject = link.dataset.subject || "Portfolio Inquiry";
+      const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}`;
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(email).catch(() => {});
+      }
+
+      window.location.href = mailtoUrl;
+
+      window.setTimeout(() => {
+        if (document.visibilityState === "visible") {
+          showEmailFallback(email, gmailUrl);
+        }
+      }, 900);
+    });
+  });
+}
 
 if (typingTitle) {
   const titleText = typingTitle.dataset.typeText || typingTitle.textContent.trim();

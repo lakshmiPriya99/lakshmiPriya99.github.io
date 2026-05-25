@@ -32,7 +32,7 @@
     />
     <meta name="twitter:image" content="https://lakshmipriya99.github.io/preview.png" />
     <meta name="theme-color" content="#c5a059" />
-    <link rel="stylesheet" href="styles.css?v=mobile-project-stack" />
+    <link rel="stylesheet" href="styles.css?v=email-mailto-fallback" />
     <script src="https://unpkg.com/lucide@latest"></script>
     <script type="application/ld+json">
       {
@@ -153,7 +153,13 @@
             <i data-lucide="briefcase-business"></i>
             View Experience
           </a>
-          <a class="btn btn-primary" href="mailto:lxv6063@mavs.uta.edu?subject=Portfolio%20Inquiry">
+          <a
+            class="btn btn-primary"
+            href="mailto:lxv6063@mavs.uta.edu?subject=Portfolio%20Inquiry"
+            data-email-link
+            data-email="lxv6063@mavs.uta.edu"
+            data-subject="Portfolio Inquiry"
+          >
             <i data-lucide="mail"></i>
             Email Me
           </a>
@@ -701,7 +707,13 @@
             measurable business impact matter.
           </p>
           <div class="contact-actions">
-            <a class="btn btn-primary" href="mailto:lxv6063@mavs.uta.edu?subject=Portfolio%20Inquiry">
+            <a
+              class="btn btn-primary"
+              href="mailto:lxv6063@mavs.uta.edu?subject=Portfolio%20Inquiry"
+              data-email-link
+              data-email="lxv6063@mavs.uta.edu"
+              data-subject="Portfolio Inquiry"
+            >
               <i data-lucide="mail"></i>
               Email Me
             </a>
@@ -733,6 +745,8 @@
         <path d="M12 19V5m0 0-6 6m6-6 6 6" />
       </svg>
     </a>
+
+    <div class="email-toast" id="emailToast" role="status" aria-live="polite"></div>
 
     <footer class="site-footer">
       <div class="footer-content">
