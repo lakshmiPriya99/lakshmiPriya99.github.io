@@ -31,7 +31,7 @@ const showEmailFallback = (email, gmailUrl) => {
   emailToast.textContent = "";
 
   const message = document.createElement("span");
-  message.textContent = `If your mail app did not open, email copied: ${email}. `;
+  message.textContent = `Email copied: ${email}. `;
 
   const gmailLink = document.createElement("a");
   gmailLink.href = gmailUrl;
