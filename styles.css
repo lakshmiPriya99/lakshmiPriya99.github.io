@@ -1346,8 +1346,14 @@ main {
   .metrics-grid,
   .metrics-dashboard,
   .skills-grid,
+  .project-list,
+  .projects-grid,
   .credential-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    min-height: auto;
   }
 
   .experience-list,
