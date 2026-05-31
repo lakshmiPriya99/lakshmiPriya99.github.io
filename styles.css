@@ -981,6 +981,35 @@ main {
   transform: translateY(-50%);
 }
 
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.72rem;
+  margin: 1rem 0 1.2rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(222, 208, 186, 0.96);
+  border-radius: 8px;
+  background: rgba(248, 244, 237, 0.82);
+  color: var(--text-main);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.66rem 0.84rem;
+  text-decoration: none !important;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+  border-color: rgba(200, 155, 67, 0.48);
+  color: var(--text-accent);
+  transform: translateY(-1px);
+}
+
 .experience-list,
 .experience-timeline {
   position: relative;
