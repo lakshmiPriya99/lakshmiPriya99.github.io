@@ -988,6 +988,11 @@ main {
   margin: 1rem 0 1.2rem;
 }
 
+.project-actions-top {
+  justify-content: flex-end;
+  margin: 0;
+}
+
 .project-link {
   display: inline-flex;
   align-items: center;
